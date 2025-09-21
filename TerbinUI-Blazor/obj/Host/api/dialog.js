@@ -1,42 +1,37 @@
 "use strict";
-exports.__esModule = true;
-var electron_1 = require("electron");
-module.exports = function (socket) {
-    socket.on('showMessageBox', function (browserWindow, options, guid) {
-        if ("id" in browserWindow) {
-            var window = electron_1.BrowserWindow.fromId(browserWindow.id);
-            electron_1.dialog.showMessageBox(window, options, function (response, checkboxChecked) {
-                socket.emit('showMessageBoxComplete' + guid, [response, checkboxChecked]);
-            });
+const electron_1 = require("electron");
+let electronSocket;
+module.exports = (socket) => {
+    electronSocket = socket;
+    socket.on('showMessageBox', async (browserWindow, options, guid) => {
+        if ('id' in browserWindow) {
+            const window = electron_1.BrowserWindow.fromId(browserWindow.id);
+            const messageBoxReturnValue = await electron_1.dialog.showMessageBox(window, options);
+            electronSocket.emit('showMessageBoxComplete' + guid, [messageBoxReturnValue.response, messageBoxReturnValue.checkboxChecked]);
         }
         else {
-            var message = browserWindow;
-            var id_1 = guid || options;
-            electron_1.dialog.showMessageBox(browserWindow, function (response, checkboxChecked) {
-                socket.emit('showMessageBoxComplete' + id_1, [response, checkboxChecked]);
-            });
+            const id = guid || options;
+            const messageBoxReturnValue = await electron_1.dialog.showMessageBox(browserWindow);
+            electronSocket.emit('showMessageBoxComplete' + id, [messageBoxReturnValue.response, messageBoxReturnValue.checkboxChecked]);
         }
     });
-    socket.on('showOpenDialog', function (browserWindow, options, guid) {
-        var window = electron_1.BrowserWindow.fromId(browserWindow.id);
-        electron_1.dialog.showOpenDialog(window, options, function (filePaths) {
-            socket.emit('showOpenDialogComplete' + guid, filePaths || []);
-        });
+    socket.on('showOpenDialog', async (browserWindow, options, guid) => {
+        const window = electron_1.BrowserWindow.fromId(browserWindow.id);
+        const openDialogReturnValue = await electron_1.dialog.showOpenDialog(window, options);
+        electronSocket.emit('showOpenDialogComplete' + guid, openDialogReturnValue.filePaths || []);
     });
-    socket.on('showSaveDialog', function (browserWindow, options, guid) {
-        var window = electron_1.BrowserWindow.fromId(browserWindow.id);
-        electron_1.dialog.showSaveDialog(window, options, function (filename) {
-            socket.emit('showSaveDialogComplete' + guid, filename || '');
-        });
+    socket.on('showSaveDialog', async (browserWindow, options, guid) => {
+        const window = electron_1.BrowserWindow.fromId(browserWindow.id);
+        const saveDialogReturnValue = await electron_1.dialog.showSaveDialog(window, options);
+        electronSocket.emit('showSaveDialogComplete' + guid, saveDialogReturnValue.filePath || '');
     });
-    socket.on('showErrorBox', function (title, content) {
+    socket.on('showErrorBox', (title, content) => {
         electron_1.dialog.showErrorBox(title, content);
     });
-    socket.on('showCertificateTrustDialog', function (browserWindow, options, guid) {
-        var window = electron_1.BrowserWindow.fromId(browserWindow.id);
-        electron_1.dialog.showCertificateTrustDialog(window, options, function () {
-            socket.emit('showCertificateTrustDialogComplete' + guid);
-        });
+    socket.on('showCertificateTrustDialog', async (browserWindow, options, guid) => {
+        const window = electron_1.BrowserWindow.fromId(browserWindow.id);
+        await electron_1.dialog.showCertificateTrustDialog(window, options);
+        electronSocket.emit('showCertificateTrustDialogComplete' + guid);
     });
 };
 //# sourceMappingURL=dialog.js.map

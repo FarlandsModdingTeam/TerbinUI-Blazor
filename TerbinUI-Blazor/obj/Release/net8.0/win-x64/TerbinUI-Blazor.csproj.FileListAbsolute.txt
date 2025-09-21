@@ -38,3 +38,4 @@ C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Release\net8.0\win-x64\refint
 C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Release\net8.0\win-x64\TerbinUI-Blazor.pdb
 C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Release\net8.0\win-x64\TerbinUI-Blazor.genruntimeconfig.cache
 C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Release\net8.0\win-x64\ref\TerbinUI-Blazor.dll
+C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Release\net8.0\win-x64\TerbinUI-Blazor.sourcelink.json

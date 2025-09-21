@@ -1,13 +1,20 @@
-﻿using TerbinUI_Blazor.Components;
-using ElectronNET.API;
+﻿using ElectronNET.API;
+using ElectronNET.API.Entities;
+using Microsoft.AspNetCore.Hosting;
+using TerbinUI_Blazor.Components;
+
+Console.WriteLine("Iniciando TerbinUI-Blazor...");
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseElectron(args);
+builder.Services.AddElectron();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.WebHost.UseElectron(args);
+
+Console.WriteLine("Construyendo Programa...");
 
 var app = builder.Build();
 
@@ -19,6 +26,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+Console.WriteLine("Configurando Programa...");
+
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
@@ -27,12 +36,16 @@ app.UseAntiforgery();
 app.MapRazorComponents<TerbinUI_Blazor.Components.App>()
     .AddInteractiveServerRenderMode();
 
-app.Run();
+Console.WriteLine("Iniciando Electron...");
+//await app.StartAsync();
 
-// Blazor
+//await Electron.WindowManager.CreateWindowAsync();
+
 await Task.Run(async () =>
 {
     await Electron.WindowManager.CreateBrowserViewAsync(); // Debug // Salta un error: 404
     var window = await Electron.WindowManager.CreateWindowAsync();
     window.OnClosed += () => { Electron.App.Quit(); };
 });
+
+app.Run();

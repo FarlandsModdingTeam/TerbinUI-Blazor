@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\terbinui-blazor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\terbinui-blazor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,8 +38,21 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TerbinUI-Blazor\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TerbinUI-Blazor\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-20T00:28:54.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TerbinUI-Blazor",
+              "Title": "TerbinUI-Blazor.csproj",
               "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\TerbinUI-Blazor.csproj",
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\TerbinUI-Blazor.csproj",
               "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\TerbinUI-Blazor.csproj",
@@ -53,7 +70,7 @@
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Program.cs",
               "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Program.cs",
               "RelativeToolTip": "TerbinUI-Blazor\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswCsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T23:19:06.535Z",
               "EditorCaption": ""
