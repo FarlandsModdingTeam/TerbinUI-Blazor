@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Repositorio/TerbinUI-Blazor/TerbinUI-Blazor/Components/Traducciones/T.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUcmFkdWNjaW9uZXNcVC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Repositorio/TerbinUI-Blazor/TerbinUI-Blazor/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

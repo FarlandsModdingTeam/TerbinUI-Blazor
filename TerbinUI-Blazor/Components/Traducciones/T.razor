@@ -1,0 +1,12 @@
+﻿@getTraducion(Key)
+
+@code
+{
+    [Parameter]
+    public ushort Key { get; set; } = 0;
+
+    private string getTraducion(ushort eKey)
+    {
+        return TerbinUI_Blazor.Script.ManagaIdioma.GetText(eKey);
+    }
+}
