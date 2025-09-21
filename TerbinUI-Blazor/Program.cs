@@ -29,7 +29,7 @@ app.MapRazorComponents<TerbinUI_Blazor.Components.App>()
 
 app.Run();
 
-
+// Blazor
 await Task.Run(async () =>
 {
     await Electron.WindowManager.CreateBrowserViewAsync(); // Debug // Salta un error: 404
