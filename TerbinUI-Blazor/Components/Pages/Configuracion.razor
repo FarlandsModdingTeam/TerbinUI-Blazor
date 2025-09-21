@@ -1,0 +1,58 @@
+﻿<h3><T Key="9" /></h3>
+
+<p><T Key="15" /></p>
+
+<select @bind="idiomaActual">
+    @foreach (var idioma in ManagaIdioma.GetLanguages())
+    {
+        <option value="@idioma.Key" selected="@(idioma.Key == ManagaIdioma.CurrentLanguage ? "selected" : null)">
+            @idioma.Value
+        </option>
+    }
+</select>
+
+@code
+{
+    private string? idiomaActual = ManagaIdioma.CurrentLanguage;
+
+    protected override void OnParametersSet()
+    {
+        ManagaIdioma.CurrentLanguage = idiomaActual;
+    }
+    /*
+    @page "/configuracion"
+
+    <h3><T Key="9" /></h3>
+
+    <p><T Key="15" /></p>
+
+    <select @bind="selecionarIdioma">
+        @foreach (var idioma in ManagaIdioma.GetLanguages())
+        {
+            <option value="@idioma.Key" selected="@(idioma.Key == ManagaIdioma.CurrentLanguage ? "selected" : null)">
+                @idioma.Value
+            </option>
+        }
+    </select>
+
+    @code
+    {
+        private string selecionarIdioma
+        {
+            get
+            {
+                return ManagaIdioma.CurrentLanguage = ManagaIdioma.CurrentLanguage ?? "Error";
+            }
+            set
+            {
+                if (value != null)
+                {
+                    ManagaIdioma.CurrentLanguage = value;
+                }
+
+            }
+        }
+    }
+
+    */
+}

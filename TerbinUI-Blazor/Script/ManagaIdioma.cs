@@ -17,6 +17,51 @@ namespace TerbinUI_Blazor.Script
 
         private static string? _currentLanguage;
 
+        // ***********************( Eventos )*********************** //
+        public static event Action? OnLanguageChanged;
+
+        // ***********************( GSI )*********************** //
+        public static string? CurrentLanguage
+        {
+            get
+            {
+                var manage = manageLanguages();
+                if (!manage.success)
+                {
+                    Console.WriteLine(manage.menssage);
+                    return null;
+                }
+
+                return _currentLanguage;
+            }
+            set
+            {
+                if (value == null || value.Equals(_currentLanguage, StringComparison.OrdinalIgnoreCase))
+                    return;
+                if (!ExisteLanguage(value))
+                    return;
+
+                Console.WriteLine($"Cambiando idioma a: {value}");
+                OnLanguageChanged?.Invoke();
+                _currentLanguage = value;
+                _cache = accesJson(_currentLanguage);
+            }
+        }
+
+        public static List<string?> Idiomas
+        {
+            get
+            {
+                var manage = manageAviables();
+                if (!manage.success)
+                {
+                    Console.WriteLine(manage.menssage);
+                    return new List<string?>();
+                }
+                return _lenguagesAviable ?? new List<string?>();
+            }
+        }
+
         // ***********************( Funciones )*********************** //
         private static Dictionary<ushort, string> accesJson(string archivo)
         {
@@ -40,6 +85,11 @@ namespace TerbinUI_Blazor.Script
             return resultado;
         }
 
+        public static string GetLine(string eLanguage, ushort eKey)
+        {
+            return accesJson(eLanguage).TryGetValue(eKey, out var texto) ? texto : $"¡¡Nak Nak Nak!! {eKey}";
+        }
+
         private static List<string?>? getLanguages()
         {
             if (!Directory.Exists(_directory))
@@ -50,21 +100,51 @@ namespace TerbinUI_Blazor.Script
                 .ToList();
         }
 
-        private static (bool success, string menssage) manageLanguages()
+        private static (bool success, string menssage) manageAviables()
         {
             _lenguagesAviable ??= getLanguages();
             if (_lenguagesAviable == null)
                 return (false, $"_lenguagesAviable es NUll");
             if (_lenguagesAviable.Count <= 0)
                 return (false, $"No se encontraron archivos en: {_directory}");
+            return (true, "");
+        }
 
-            _currentLanguage ??=_lenguagesAviable.Find(a => a != null && a.Equals("English.json", StringComparison.OrdinalIgnoreCase))
-                ?? _lenguagesAviable.Find(a => a != null && a.Equals("Español.json", StringComparison.OrdinalIgnoreCase));
+        public static Dictionary<string?, string> GetLanguages()
+        {
+            var manage = manageAviables();
+            if (!manage.success)
+            {
+                Console.WriteLine(manage.menssage);
+                return [];
+            }
+            return _lenguagesAviable.ToDictionary(lang => lang, lang => GetLine(lang, 0));
+        }
 
-            if (_currentLanguage == null)
+        public static bool ExisteLanguage(string eLanguage)
+        {
+            var manage = manageAviables();
+            if (!manage.success)
+            {
+                Console.WriteLine(manage.menssage);
+                return false;
+            }
+            return _lenguagesAviable.Contains(eLanguage);
+        }
+
+        private static (bool success, string menssage) manageLanguages()
+        {
+            var manage = manageAviables();
+            if (!manage.success)
+                return manage;
+
+            CurrentLanguage ??= _lenguagesAviable?.Find(a => a != null && a.Equals("English.json", StringComparison.OrdinalIgnoreCase))
+                ?? _lenguagesAviable?.Find(a => a != null && a.Equals("Español.json", StringComparison.OrdinalIgnoreCase));
+
+            if (CurrentLanguage == null)
                 return (false, $"_currentLanguage es NUll");
 
-            _cache ??= accesJson(_currentLanguage);
+            _cache ??= accesJson(CurrentLanguage);
             return (true, "");
         }
 

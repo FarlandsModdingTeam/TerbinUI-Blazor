@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TerbinUI-Blazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e725052771efc152cc671e63262307488c23862")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbbe2b4b9bd61bc7c1a7676dcee38a51ec8cde83")]
 [assembly: System.Reflection.AssemblyProductAttribute("TerbinUI-Blazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TerbinUI-Blazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
