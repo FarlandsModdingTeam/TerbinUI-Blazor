@@ -43,7 +43,7 @@ Console.WriteLine("Iniciando Electron...");
 
 await Task.Run(async () =>
 {
-    //await Electron.WindowManager.CreateBrowserViewAsync();
+    await Electron.WindowManager.CreateBrowserViewAsync();
     var window = await Electron.WindowManager.CreateWindowAsync();
     window.OnClosed += () => { Electron.App.Quit(); };
 });
