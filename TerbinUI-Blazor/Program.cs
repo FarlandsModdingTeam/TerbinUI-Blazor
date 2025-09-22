@@ -28,7 +28,7 @@ if (!app.Environment.IsDevelopment())
 
 //Console.WriteLine("Configurando Programa...");
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
@@ -41,9 +41,9 @@ app.MapRazorComponents<TerbinUI_Blazor.Components.App>()
 
 //await Electron.WindowManager.CreateWindowAsync();
 
-await Task.Run(async () =>
+app.Lifetime.ApplicationStarted.Register(async () =>
 {
-    await Electron.WindowManager.CreateBrowserViewAsync();
+    //await Electron.WindowManager.CreateBrowserViewAsync();
     var window = await Electron.WindowManager.CreateWindowAsync();
     window.OnClosed += () => { Electron.App.Quit(); };
 });
