@@ -39,3 +39,4 @@ C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Debug\net8.0\win-x64\refint\T
 C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Debug\net8.0\win-x64\TerbinUI-Blazor.pdb
 C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Debug\net8.0\win-x64\TerbinUI-Blazor.genruntimeconfig.cache
 C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Debug\net8.0\win-x64\ref\TerbinUI-Blazor.dll
+C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\bin\Debug\net8.0\win-x64\package-lock.json

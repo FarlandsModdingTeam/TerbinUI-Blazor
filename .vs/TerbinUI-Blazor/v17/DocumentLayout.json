@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Repositorio\\TerbinUI-Blazor\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\components\\pages\\configuracion.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\components\\pages\\configuracion.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\script\\managaidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\script\\managaidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -25,6 +21,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\script\\managaidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\script\\managaidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|solutionrelative:terbinui-blazor\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C405C98B-D628-4154-BBF9-9D83BDE1151D}|TerbinUI-Blazor\\TerbinUI-Blazor.csproj|c:\\repositorio\\terbinui-blazor\\terbinui-blazor\\components\\traducciones\\t.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -54,7 +62,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Program.cs",
+              "RelativeDocumentMoniker": "TerbinUI-Blazor\\Program.cs",
+              "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Program.cs",
+              "RelativeToolTip": "TerbinUI-Blazor\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwCcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T05:04:24.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TerbinUI-Blazor\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TerbinUI-Blazor\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-22T04:51:06.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Components\\Layout\\NavMenu.razor",
@@ -67,20 +101,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Configuracion.razor",
               "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Components\\Pages\\Configuracion.razor",
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Components\\Pages\\Configuracion.razor",
               "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Components\\Pages\\Configuracion.razor",
               "RelativeToolTip": "TerbinUI-Blazor\\Components\\Pages\\Configuracion.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-21T16:34:44.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Weather.razor",
               "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Components\\Pages\\Weather.razor",
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Components\\Pages\\Weather.razor",
@@ -93,20 +127,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ManagaIdioma.cs",
               "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Script\\ManagaIdioma.cs",
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Script\\ManagaIdioma.cs",
               "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Script\\ManagaIdioma.cs",
               "RelativeToolTip": "TerbinUI-Blazor\\Script\\ManagaIdioma.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T09:36:56.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "T.razor",
               "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Components\\Traducciones\\T.razor",
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Components\\Traducciones\\T.razor",
@@ -114,12 +148,11 @@
               "RelativeToolTip": "TerbinUI-Blazor\\Components\\Traducciones\\T.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-21T09:26:46.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T09:26:46.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Components\\App.razor",
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Components\\App.razor",
@@ -127,12 +160,11 @@
               "RelativeToolTip": "TerbinUI-Blazor\\Components\\App.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-21T09:16:59.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T09:16:59.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Components\\Pages\\Home.razor",
@@ -140,8 +172,7 @@
               "RelativeToolTip": "TerbinUI-Blazor\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-21T09:14:38.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T09:14:38.188Z"
             }
           ]
         },

@@ -110,15 +110,21 @@ namespace TerbinUI_Blazor.Script
             return (true, "");
         }
 
-        public static Dictionary<string?, string> GetLanguages()
+        public static Dictionary<string, string> GetLanguages()
         {
             var manage = manageAviables();
             if (!manage.success)
             {
                 Console.WriteLine(manage.menssage);
-                return [];
+                return new Dictionary<string, string>();
             }
-            return _lenguagesAviable.ToDictionary(lang => lang, lang => GetLine(lang, 0));
+            // Filtrar nulos antes de usar ToDictionary
+            return _lenguagesAviable!
+                .Where(lang => !string.IsNullOrEmpty(lang))
+                .ToDictionary(
+                    lang => lang!, // lang no es nulo aquí
+                    lang => GetLine(lang!, 0) // lang no es nulo aquí
+                );
         }
 
         public static bool ExisteLanguage(string eLanguage)
@@ -129,7 +135,7 @@ namespace TerbinUI_Blazor.Script
                 Console.WriteLine(manage.menssage);
                 return false;
             }
-            return _lenguagesAviable.Contains(eLanguage);
+            return _lenguagesAviable!.Contains(eLanguage);
         }
 
         private static (bool success, string menssage) manageLanguages()

@@ -142,3 +142,7 @@ vite.config.ts.timestamp-*
 # .vsidx
 .vsidx
 *.vsidx
+
+# .vs
+.vs
+*.vs
