@@ -68,7 +68,7 @@
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Program.cs",
               "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Program.cs",
               "RelativeToolTip": "TerbinUI-Blazor\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAwCcAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T05:04:24.245Z",
               "EditorCaption": ""
@@ -81,7 +81,7 @@
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Properties\\launchSettings.json",
               "RelativeToolTip": "TerbinUI-Blazor\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwB4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-09-22T04:51:06.237Z",
               "EditorCaption": ""
@@ -94,7 +94,7 @@
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Components\\Layout\\NavMenu.razor",
               "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Components\\Layout\\NavMenu.razor",
               "RelativeToolTip": "TerbinUI-Blazor\\Components\\Layout\\NavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-21T17:40:09.162Z",
               "EditorCaption": ""
@@ -107,7 +107,7 @@
               "RelativeDocumentMoniker": "TerbinUI-Blazor\\Components\\Pages\\Configuracion.razor",
               "ToolTip": "C:\\Repositorio\\TerbinUI-Blazor\\TerbinUI-Blazor\\Components\\Pages\\Configuracion.razor",
               "RelativeToolTip": "TerbinUI-Blazor\\Components\\Pages\\Configuracion.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-21T16:34:44.53Z",
               "EditorCaption": ""
@@ -122,8 +122,7 @@
               "RelativeToolTip": "TerbinUI-Blazor\\Components\\Pages\\Weather.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-21T13:30:51.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T13:30:51.348Z"
             },
             {
               "$type": "Document",
@@ -135,8 +134,7 @@
               "RelativeToolTip": "TerbinUI-Blazor\\Script\\ManagaIdioma.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T09:36:56.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T09:36:56.547Z"
             },
             {
               "$type": "Document",

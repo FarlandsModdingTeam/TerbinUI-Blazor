@@ -3,7 +3,7 @@ using ElectronNET.API.Entities;
 using Microsoft.AspNetCore.Hosting;
 using TerbinUI_Blazor.Components;
 
-Console.WriteLine("Iniciando TerbinUI-Blazor...");
+//Console.WriteLine("Iniciando TerbinUI-Blazor...");
 
 var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.UseElectron(args);
@@ -14,7 +14,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 
-Console.WriteLine("Construyendo Programa...");
+//Console.WriteLine("Construyendo Programa...");
 
 var app = builder.Build();
 
@@ -26,7 +26,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-Console.WriteLine("Configurando Programa...");
+//Console.WriteLine("Configurando Programa...");
 
 app.UseHttpsRedirection();
 
@@ -36,7 +36,7 @@ app.UseAntiforgery();
 app.MapRazorComponents<TerbinUI_Blazor.Components.App>()
     .AddInteractiveServerRenderMode();
 
-Console.WriteLine("Iniciando Electron...");
+//Console.WriteLine("Iniciando Electron...");
 //await app.StartAsync();
 
 //await Electron.WindowManager.CreateWindowAsync();

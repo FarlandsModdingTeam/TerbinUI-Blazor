@@ -42,3 +42,4 @@ C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Debug\net8.0\TerbinUI-Blazor.
 C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Debug\net8.0\ref\TerbinUI-Blazor.dll
 C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\bin\Debug\net8.0\electron.manifest.json
 C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\obj\Debug\net8.0\TerbinUI-Blazor.sourcelink.json
+C:\Repositorio\TerbinUI-Blazor\TerbinUI-Blazor\bin\Debug\net8.0\package-lock.json
