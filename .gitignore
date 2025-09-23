@@ -292,6 +292,8 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Cosas de especificados
 TerbinUI-Blazor/obj/Debug/net8.0/win-x64/TerbinUI-Blazor.sourcelink.json
 TerbinUI-Blazor/obj/Debug/net8.0/win-x64/TerbinUI-Blazor.pdb
 TerbinUI-Blazor/obj/Debug/net8.0/win-x64/TerbinUI-Blazor.dll
