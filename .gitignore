@@ -292,3 +292,19 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/TerbinUI-Blazor.sourcelink.json
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/TerbinUI-Blazor.pdb
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/TerbinUI-Blazor.dll
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/TerbinUI-Blazor.AssemblyInfoInputs.cache
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/TerbinUI-Blazor.AssemblyInfo.cs
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/rjsmrazor.dswa.cache.json
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/rjsmcshtml.dswa.cache.json
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/refint/TerbinUI-Blazor.dll
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/ref/TerbinUI-Blazor.dll
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/R2R/TerbinUI-Blazor.dll
+TerbinUI-Blazor/obj/Debug/net8.0/win-x64/apphost.exe
+TerbinUI-Blazor/bin/Debug/net8.0/win-x64/TerbinUI-Blazor.pdb
+TerbinUI-Blazor/bin/Debug/net8.0/win-x64/TerbinUI-Blazor.exe
+TerbinUI-Blazor/bin/Debug/net8.0/win-x64/TerbinUI-Blazor.dll
+obj/Host/bin/TerbinUI-Blazor.pdb
+obj/Host/bin/TerbinUI-Blazor.exe
