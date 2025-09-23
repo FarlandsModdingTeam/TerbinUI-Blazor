@@ -146,3 +146,6 @@ vite.config.ts.timestamp-*
 # .vs
 .vs
 *.vs
+
+.cache.json
+*.cache.json
