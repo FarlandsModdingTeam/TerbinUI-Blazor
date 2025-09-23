@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Resources;
+﻿using System.Diagnostics;
 using System.Text.Json;
 
 namespace TerbinUI_Blazor.Script

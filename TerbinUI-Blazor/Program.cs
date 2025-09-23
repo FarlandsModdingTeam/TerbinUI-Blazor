@@ -1,7 +1,4 @@
 ﻿using ElectronNET.API;
-using ElectronNET.API.Entities;
-using Microsoft.AspNetCore.Hosting;
-using TerbinUI_Blazor.Components;
 
 Console.WriteLine("Iniciando TerbinUI-Blazor...");
 
