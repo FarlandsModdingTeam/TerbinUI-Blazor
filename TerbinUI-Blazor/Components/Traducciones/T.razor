@@ -6,15 +6,15 @@
     public ushort Key { get; set; } = 0;
 
 
-    //protected override void OnInitialized()
-    //{
-    //    //base.OnInitialized();
-    //    //TerbinUI_Blazor.Script.ManagaIdioma.OnLanguageChanged += OnChangeIdioma;
-    //}
-    //public void Dispose()
-    //{
-    //    //TerbinUI_Blazor.Script.ManagaIdioma.OnLanguageChanged -= OnChangeIdioma;
-    //}
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        TerbinUI_Blazor.Script.ManagaIdioma.OnLanguageChanged += OnChangeIdioma;
+    }
+    public void Dispose()
+    {
+        TerbinUI_Blazor.Script.ManagaIdioma.OnLanguageChanged -= OnChangeIdioma;
+    }
 
     private string getTraducion(ushort eKey)
     {

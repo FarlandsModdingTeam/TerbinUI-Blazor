@@ -1,11 +1,11 @@
 ﻿@page "/configuracion"
+
 <PageTitle>TerbinUI - <T Key="9" /></PageTitle>
 
 <h3><T Key="9" /></h3>
 
 <p><T Key="15" /></p>
 
-<!-- 
 <select @bind="selecionarIdioma">
     @foreach (var idioma in ManagaIdioma.GetLanguages())
     {
@@ -14,11 +14,11 @@
         </option>
     }
 </select>
- -->
-
+ 
 @code
 {
-    /*
+    [Inject] IJSRuntime JS { get; set; } = default!;
+
     private string selecionarIdioma
     {
         get
@@ -30,9 +30,12 @@
             if (value != null)
             {
                 ManagaIdioma.CurrentLanguage = value;
+                Console.WriteLine($"Idioma cambiado a: {value}");
             }
-
+            else
+            {
+                Console.WriteLine("Error al cambiar el idioma");
+            }
         }
     }
-    */
 }

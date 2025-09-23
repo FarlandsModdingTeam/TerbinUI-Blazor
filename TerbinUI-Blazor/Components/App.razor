@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
-
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,12 +8,21 @@
         <link rel="stylesheet" href="app.css" />
         <link rel="stylesheet" href="TerbinUI-Blazor.styles.css" />
         <link rel="icon" type="image/png" href="favicon.png" />
-        <HeadOutlet />
+        
+        <ErrorBoundary>
+            <HeadOutlet />
+        </ErrorBoundary>
     </head>
-
     <body>
-        <Routes />
+        <ErrorBoundary>
+            <Routes />
+        </ErrorBoundary>
+        <p>Este texto solo se ve si comentas los componentes de blazor</p>
         <script src="_framework/blazor.web.js"></script>
     </body>
 
 </html>
+@code
+{
+
+}

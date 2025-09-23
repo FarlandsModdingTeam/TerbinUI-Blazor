@@ -3,8 +3,12 @@
 Console.WriteLine("(Terbin-UI: Program.cs): Iniciando TerbinUI-Blazor...");
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.WebHost.UseElectron(args);
 builder.Services.AddElectron();
+
+builder.Logging.SetMinimumLevel(LogLevel.Trace);
+builder.Logging.AddConsole();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -42,5 +46,4 @@ app.Lifetime.ApplicationStarted.Register(async () =>
     window.OnClosed += () => { Electron.App.Quit(); };
 });
 
-Console.WriteLine("(Terbin-UI: Program.cs): Iniciando Run");
 app.Run();

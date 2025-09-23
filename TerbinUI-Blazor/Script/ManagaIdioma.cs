@@ -144,10 +144,10 @@ namespace TerbinUI_Blazor.Script
             _currentLanguage ??= _lenguagesAviable?.Find(a => a != null && a.Equals("English.json", StringComparison.OrdinalIgnoreCase))
                 ?? _lenguagesAviable?.Find(a => a != null && a.Equals("Español.json", StringComparison.OrdinalIgnoreCase));
 
-            if (CurrentLanguage == null)
+            if (_currentLanguage == null)
                 return (false, $"_currentLanguage es NUll");
 
-            _cache ??= accesJson(CurrentLanguage);
+            _cache ??= accesJson(_currentLanguage);
             return (true, "");
         }
 
