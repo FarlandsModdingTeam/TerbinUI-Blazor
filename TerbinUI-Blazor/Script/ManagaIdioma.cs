@@ -119,8 +119,8 @@ namespace TerbinUI_Blazor.Script
             return _lenguagesAviable!
                 .Where(lang => !string.IsNullOrEmpty(lang))
                 .ToDictionary(
-                    lang => lang!, // lang no es nulo aquí
-                    lang => GetLine(lang!, 0) // lang no es nulo aquí
+                    lang => lang!,
+                    lang => GetLine(lang!, 0)
                 );
         }
 

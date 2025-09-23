@@ -1,12 +1,17 @@
 ﻿@page "/configuracion"
+@using System.Reflection.Metadata
+@rendermode InteractiveServer
 
 <PageTitle>TerbinUI - <T Key="9" /></PageTitle>
 
-<h3><T Key="9" /></h3>
+<h2><T Key="9" /></h2>
 
 <p><T Key="15" /></p>
 
+<p>Idioma Actual: @selecionarIdioma @contador</p>
+
 <select @bind="selecionarIdioma">
+    @*selected="@(idioma.Key == ManagaIdioma.CurrentLanguage ? "selected" : null)">*@
     @foreach (var idioma in ManagaIdioma.GetLanguages())
     {
         <option value="@idioma.Key" selected="@(idioma.Key == ManagaIdioma.CurrentLanguage ? "selected" : null)">
@@ -14,28 +19,50 @@
         </option>
     }
 </select>
- 
+<button class="btn btn-primary" @onclick="changeIdioma">
+    <T Key="5" />
+</button>
+
 @code
 {
-    [Inject] IJSRuntime JS { get; set; } = default!;
+    private int contador = 0;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        string info = string.Empty;
+        ManagaIdioma.GetLanguages()
+            .Select(kvp => $"Archivo: {kvp.Key}, Idioma: {kvp.Value}")
+            .ToList()
+            .ForEach(i => info += "\n" + i);
+
+        Console.WriteLine($"Idiomas Actuales:{info}");
+    }
 
     private string selecionarIdioma
     {
-        get
-        {
-            return ManagaIdioma.CurrentLanguage = ManagaIdioma.CurrentLanguage ?? "Error";
-        }
+        get => ManagaIdioma.CurrentLanguage ?? "Error";
         set
         {
-            if (value != null)
+            contador++;
+            Console.WriteLine($"Cambiando Idioma ...");
+            if (!string.IsNullOrEmpty(value) && value != ManagaIdioma.CurrentLanguage)
             {
                 ManagaIdioma.CurrentLanguage = value;
-                Console.WriteLine($"Idioma cambiado a: {value}");
-            }
-            else
-            {
-                Console.WriteLine("Error al cambiar el idioma");
+                Console.WriteLine($"Idioma Actual: {value}");
+                StateHasChanged();
             }
         }
+    }
+
+    private void changeIdioma()
+    {
+        contador++;
+        //Console.WriteLine($"Cambiando Idioma ...");
+        //
+        //ManagaIdioma.CurrentLanguage = selecionarIdioma;
+        //Console.WriteLine($"Idioma Actual: {selecionarIdioma}");
+        //StateHasChanged();
     }
 }

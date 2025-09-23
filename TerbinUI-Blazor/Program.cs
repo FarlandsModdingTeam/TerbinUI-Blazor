@@ -1,4 +1,5 @@
 ﻿using ElectronNET.API;
+using ElectronNET.API.Entities;
 
 Console.WriteLine("(Terbin-UI: Program.cs): Iniciando TerbinUI-Blazor...");
 
@@ -42,8 +43,19 @@ Console.WriteLine("(Terbin-UI: Program.cs): Iniciando Electron...");
 app.Lifetime.ApplicationStarted.Register(async () =>
 {
     await Electron.WindowManager.CreateBrowserViewAsync();
-    var window = await Electron.WindowManager.CreateWindowAsync();
-    window.OnClosed += () => { Electron.App.Quit(); };
+    var window = await Electron.WindowManager.CreateWindowAsync(new BrowserWindowOptions
+    {
+        WebPreferences = new WebPreferences
+        {
+            ContextIsolation = false,
+            NodeIntegration = false
+        }
+    });
+    window.OnClosed += () =>
+    {
+        Console.WriteLine("(Terbin-UI: Program.cs): Saliendo de Terbin-UI...");
+        Electron.App.Quit();
+    };
 });
 
 app.Run();
