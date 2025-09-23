@@ -9,7 +9,7 @@ namespace TerbinUI_Blazor.Script
     public static class ManagaIdioma
     {
         // ***********************( Variables )*********************** //
-        private const string _directory = "./wwwroot/Data/Languages/";
+        private const string _directory = "wwwroot\\Data\\Languages\\";
 
         private static Dictionary<ushort, string>? _cache;
 
@@ -144,7 +144,7 @@ namespace TerbinUI_Blazor.Script
             if (!manage.success)
                 return manage;
 
-            CurrentLanguage ??= _lenguagesAviable?.Find(a => a != null && a.Equals("English.json", StringComparison.OrdinalIgnoreCase))
+            _currentLanguage ??= _lenguagesAviable?.Find(a => a != null && a.Equals("English.json", StringComparison.OrdinalIgnoreCase))
                 ?? _lenguagesAviable?.Find(a => a != null && a.Equals("Español.json", StringComparison.OrdinalIgnoreCase));
 
             if (CurrentLanguage == null)
@@ -156,14 +156,22 @@ namespace TerbinUI_Blazor.Script
 
         public static string GetText(ushort eKey)
         {
-            var manage = manageLanguages();
-            if (!manage.success)
-                return $"{manage.menssage} - {eKey}";
+            try
+            {
+                var manage = manageLanguages();
+                if (!manage.success)
+                    return $"{manage.menssage} - {eKey}";
 
-            if (_cache == null)
-                return $"_cache es NUll | Nota: Esto nunca deberia suceder - {eKey}";
+                if (_cache == null)
+                    return $"_cache es NUll | Nota: Esto nunca deberia suceder - {eKey}";
 
-            return _cache.TryGetValue(eKey, out var texto) ? texto : $"¡¡Nak Nak Nak!! {eKey}";
+                return _cache.TryGetValue(eKey, out var texto) ? texto : $"¡¡Nak Nak Nak!! {eKey}";
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error al obtener el texto para la clave {eKey}: {ex.Message}");
+                return $"Error: {ex.Message} - {eKey}";
+            }
         }
     }
 }

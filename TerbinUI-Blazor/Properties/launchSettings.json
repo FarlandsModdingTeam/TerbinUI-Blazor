@@ -9,11 +9,11 @@
       }
     },
     "profiles": {
-"Electron.NET App": {
-"commandName": "Executable",
-"executablePath": "C:\\Program Files\\dotnet\\dotnet.exe",
-"commandLineArgs": "electronize start"
-},
+      "Electron.NET App": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "commandLineArgs": "electronize start"
+      },
 
       "http": {
         "commandName": "Project",
