@@ -9,10 +9,14 @@
     "7" : "Instance Management",
     "8" : "Mod Management",
     "9" : "Settings",
-    "10" : "This is the home page.",
-    "11" : "Here you can manage your TerbinUI instances.",
-    "12" : "Here you can manage the mods installed in your TerbinUI instance.",
-    "13" : "Install new mod:",
+    "10" : "This is the home page",
+    "11" : "Here you can manage your TerbinUI instances",
+    "12" : "Here you can manage the mods installed in your TerbinUI instance",
+    "13" : "Install new mod",
     "14" : "Installed Mods",
-    "15" : "TerbinUI Settings."
+    "15" : "TerbinUI Settings",
+    "16" : "Terbin Settings",
+    "17" : "Farlands Path",
+    "18" : "Instances Path",
+    "19" : "Mods Path"
 }

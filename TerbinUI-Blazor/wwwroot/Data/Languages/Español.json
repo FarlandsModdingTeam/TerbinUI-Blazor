@@ -9,10 +9,14 @@
     "7" : "Gestión de Instancias",
     "8" : "Gestión de Mods",
     "9" : "Configuración",
-    "10" : "Esta es la página de inicio.",
-    "11" : "Aquí puedes gestionar tus instancias de TerbinUI.",
-    "12" : "Aquí puedes gestionar los mods instalados en tu instancia de TerbinUI.",
-    "13" : "Instalar nuevo mod:",
+    "10" : "Esta es la página de inicio",
+    "11" : "Aquí puedes gestionar tus instancias de TerbinUI",
+    "12" : "Aquí puedes gestionar los mods instalados en tu instancia de TerbinUI",
+    "13" : "Instalar nuevo mod",
     "14" : "Mods Instalados",
-    "15" : "Configuración de TerbinUI."
+    "15" : "Configuración de TerbinUI",
+    "16" : "Configuración de Terbin",
+    "17" : "Ruta de Farlands",
+    "18" : "Ruta de las Instancias",
+    "19" : "Ruta de los Mods"
 }

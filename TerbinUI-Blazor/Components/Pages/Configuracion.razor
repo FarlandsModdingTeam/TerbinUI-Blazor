@@ -4,11 +4,36 @@
 
 <PageTitle>TerbinUI - <T Key="9" /></PageTitle>
 
-<h2><T Key="9" /></h2>
+<h2><T Key="16" /></h2>
 
-<p><T Key="15" /></p>
+<div class="m-1 w-100">
+    <p><T Key="17" />:</p>
+    <div class="w-100">
+        <input class="w-50" id="dirFarlands" type="text" />
+        <button class="btn btn-outline-primary">*Examinar</button>
+        <button class="btn btn-outline-primary">*Abrir</button>
+    </div>
+</div>
 
-@* <p>Idioma Actual: @selecionarIdioma @contador</p> *@
+<hr />
+<h2><T Key="15" /></h2>
+
+<div class="m-1">
+    <p><T Key="18" />:</p>
+    <div class="w-100">
+        <input class="w-50" id="dirInstnacias" type="text" />
+        <button class="btn btn-outline-primary">*Examinar</button>
+        <button class="btn btn-outline-primary">*Abrir</button>
+    </div>
+</div>
+<div class="m-1">
+    <p><T Key="19" />:</p>
+    <div class="w-100">
+        <input class="w-50" id="dirMods" type="text" />
+        <button class="btn btn-outline-primary">*Examinar</button>
+        <button class="btn btn-outline-primary">*Abrir</button>
+    </div>
+</div>
 
 <select @bind="selecionarIdioma">
     @*selected="@(idioma.Key == ManagaIdioma.CurrentLanguage ? "selected" : null)">*@
@@ -19,9 +44,7 @@
         </option>
     }
 </select>
-@* <button class="btn btn-primary" @onclick="changeIdioma">
-    <T Key="5" />
-</button> *@
+<hr />
 
 @code
 {
