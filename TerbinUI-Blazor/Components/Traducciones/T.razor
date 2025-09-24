@@ -1,10 +1,11 @@
-﻿@getTraducion(Key)
+﻿@getText()
 
 @code
 {
     [Parameter]
     public ushort Key { get; set; } = 0;
 
+    private string _traducido = string.Empty;
 
     protected override void OnInitialized()
     {
@@ -21,8 +22,23 @@
         return TerbinUI_Blazor.Script.ManagaIdioma.GetText(eKey);
     }
 
+    private void translate()
+    {
+        _traducido = getTraducion(Key);
+    }
+
+    private string getText()
+    {
+        translate();
+        return _traducido;
+    }
+
     private void OnChangeIdioma()
     {
-        StateHasChanged();
+        InvokeAsync(() =>
+        {
+            StateHasChanged();
+            translate();
+        });
     }
 }

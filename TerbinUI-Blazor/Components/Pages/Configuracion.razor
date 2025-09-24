@@ -8,7 +8,7 @@
 
 <p><T Key="15" /></p>
 
-<p>Idioma Actual: @selecionarIdioma @contador</p>
+@* <p>Idioma Actual: @selecionarIdioma @contador</p> *@
 
 <select @bind="selecionarIdioma">
     @*selected="@(idioma.Key == ManagaIdioma.CurrentLanguage ? "selected" : null)">*@
@@ -19,9 +19,9 @@
         </option>
     }
 </select>
-<button class="btn btn-primary" @onclick="changeIdioma">
+@* <button class="btn btn-primary" @onclick="changeIdioma">
     <T Key="5" />
-</button>
+</button> *@
 
 @code
 {
@@ -49,9 +49,12 @@
             Console.WriteLine($"Cambiando Idioma ...");
             if (!string.IsNullOrEmpty(value) && value != ManagaIdioma.CurrentLanguage)
             {
-                ManagaIdioma.CurrentLanguage = value;
-                Console.WriteLine($"Idioma Actual: {value}");
-                StateHasChanged();
+                InvokeAsync(() =>
+                {
+                    ManagaIdioma.CurrentLanguage = value;
+                    Console.WriteLine($"Idioma Actual: {value}");
+                    StateHasChanged();
+                });
             }
         }
     }
