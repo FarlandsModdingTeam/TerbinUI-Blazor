@@ -1,26 +1,28 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <base href="/" />
-        <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="app.css" />
-        <link rel="stylesheet" href="TerbinUI-Blazor.styles.css" />
-        <link rel="icon" type="image/png" href="favicon.png" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="TerbinUI-Blazor.styles.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.min.css">
+    @* <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"> *@
     @*<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; connect-src 'self' ws://localhost:*;">*@
 
-        <ErrorBoundary>
-            <HeadOutlet />
-        </ErrorBoundary>
-    </head>
-    <body>
-        <ErrorBoundary>
-            <Routes />
-        </ErrorBoundary>
-        <script src="_framework/blazor.web.js"></script>
-    </body>
-
+    <ErrorBoundary>
+        <HeadOutlet />
+    </ErrorBoundary>
+</head>
+<body>
+    <ErrorBoundary>
+        <Routes />
+    </ErrorBoundary>
+    <script src="_framework/blazor.web.js"></script>
+</body>
 </html>
 @code
 {
