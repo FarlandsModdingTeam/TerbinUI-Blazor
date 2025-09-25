@@ -6,7 +6,7 @@ namespace TerbinUI_Blazor.Script
     {
         // ***********************( Variables )*********************** //
         private const string _filePath = "wwwroot\\Data\\";
-        private const string _fileName = "config.json";
+        private const string _fileName = "config.terbinui.json";
 
         private static Dictionary<string, string>? _config;
 
