@@ -2,16 +2,20 @@
 @using System.Reflection.Metadata
 @rendermode InteractiveServer
 
-<PageTitle>TerbinUI - <T Key="9" /></PageTitle>
+<PageTitle>TerbinUI</PageTitle>
 
 <h2><T Key="16" /></h2>
 
 <div class="m-1 w-100">
     <p><T Key="17" />:</p>
-    <div class="w-100">
-        <input class="w-50" id="dirFarlands" type="text" />
-        <button class="btn btn-outline-primary">*Examinar</button>
-        <button class="btn btn-outline-primary">*Abrir</button>
+    <div class="row">
+        <div class="col-8">
+            <input class="w-100" id="dirFarlands" type="text" />
+        </div>
+        <div class="col-4 d-flex align-items-center">
+            <button class="btn btn-outline-primary me-2">*Examinar</button>
+            <button class="btn btn-outline-primary">*Abrir</button>
+        </div>
     </div>
 </div>
 
