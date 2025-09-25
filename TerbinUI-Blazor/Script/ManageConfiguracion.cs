@@ -18,7 +18,11 @@ namespace TerbinUI_Blazor.Script
         // ***********************( GSI )*********************** //
         public static Dictionary<string, string>? Config
         {
-            set { _config = value; }
+            set
+            {
+                // handleArchivo(); // No se si deberia.
+                _config = value;
+            }
             get
             {
                 handleArchivo();
@@ -32,10 +36,58 @@ namespace TerbinUI_Blazor.Script
             {
                 if (Config != null)
                     Config[_pathInstancias] = value;
+                var salida = salvarConfig();
+                if (!salida.succes)
+                    Console.WriteLine($"(Terbin-UI > PathInstancias): {salida.menssage}");
             }
             get
             {
                 return (Config != null && Config.TryGetValue(_pathInstancias, out string? value)) ? value : "";
+            }
+        }
+        public static string PathMods
+        {
+            set
+            {
+                if (Config != null)
+                    Config[_pathMods] = value;
+                var salida = salvarConfig();
+                if (!salida.succes)
+                    Console.WriteLine($"(Terbin-UI > PathMods): {salida.menssage}");
+            }
+            get
+            {
+                return (Config != null && Config.TryGetValue(_pathMods, out string? value)) ? value : "";
+            }
+        }
+        public static string Language
+        {
+            set
+            {
+                if (Config != null)
+                    Config[_language] = value;
+                var salida = salvarConfig();
+                if (!salida.succes)
+                    Console.WriteLine($"(Terbin-UI > Language): {salida.menssage}");
+            }
+            get
+            {
+                return (Config != null && Config.TryGetValue(_language, out string? value)) ? value : "English.json";
+            }
+        }
+        public static string ApiKey
+        {
+            set
+            {
+                if (Config != null)
+                    Config[_apiKey] = value;
+                var salida = salvarConfig();
+                if (!salida.succes)
+                    Console.WriteLine($"(Terbin-UI > ApiKey): {salida.menssage}");
+            }
+            get
+            {
+                return (Config != null && Config.TryGetValue(_apiKey, out string? value)) ? value : "-1";
             }
         }
 
@@ -106,5 +158,12 @@ namespace TerbinUI_Blazor.Script
             }
         }
 
+        private static (bool succes, string menssage) salvarConfig()
+        {
+            if (_config == null)
+                handleArchivo();
+
+            return AccesoJson.AccesoNormal(_filePath, _fileName, _config!);
+        }
     }
 }
