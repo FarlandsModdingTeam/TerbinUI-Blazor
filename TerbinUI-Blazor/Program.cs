@@ -1,7 +1,7 @@
 ﻿using ElectronNET.API;
 using ElectronNET.API.Entities;
 
-Console.WriteLine("(Terbin-UI: Program.cs): Iniciando TerbinUI-Blazor...");
+Console.WriteLine("(Terbin-UI > Program.cs): Iniciando TerbinUI-Blazor...");
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +16,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 
-Console.WriteLine("(Terbin-UI: Program.cs): Construyendo Programa...");
+Console.WriteLine("(Terbin-UI > Program.cs): Construyendo Programa...");
 
 var app = builder.Build();
 
@@ -28,7 +28,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-Console.WriteLine("(Terbin-UI: Program.cs): Configurando Programa...");
+Console.WriteLine("(Terbin-UI > Program.cs): Configurando Programa...");
 
 //app.UseHttpsRedirection();
 
@@ -38,7 +38,7 @@ app.UseAntiforgery();
 app.MapRazorComponents<TerbinUI_Blazor.Components.App>()
     .AddInteractiveServerRenderMode();
 
-Console.WriteLine("(Terbin-UI: Program.cs): Iniciando Electron...");
+Console.WriteLine("(Terbin-UI > Program.cs): Iniciando Electron...");
 
 app.Lifetime.ApplicationStarted.Register(async () =>
 {
@@ -53,7 +53,7 @@ app.Lifetime.ApplicationStarted.Register(async () =>
     });
     window.OnClosed += () =>
     {
-        Console.WriteLine("(Terbin-UI: Program.cs): Saliendo de Terbin-UI...");
+        Console.WriteLine("(Terbin-UI > Program.cs): Saliendo de Terbin-UI...");
         Electron.App.Quit();
     };
 });
