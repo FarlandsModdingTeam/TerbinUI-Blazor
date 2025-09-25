@@ -42,6 +42,7 @@ namespace TerbinUI_Blazor.Script
                 OnLanguageChanged?.Invoke();
                 _currentLanguage = value;
                 _cache = accesJson(_currentLanguage);
+                ManageConfiguracion.Language = _currentLanguage;
             }
         }
 
@@ -141,7 +142,8 @@ namespace TerbinUI_Blazor.Script
             if (!manage.success)
                 return manage;
 
-            _currentLanguage ??= _lenguagesAviable?.Find(a => a != null && a.Equals("English.json", StringComparison.OrdinalIgnoreCase))
+            _currentLanguage ??= _lenguagesAviable?.Find(a => a != null && a.Equals(ManageConfiguracion.Language, StringComparison.OrdinalIgnoreCase))
+                // ?? _lenguagesAviable?.Find(a => a != null && a.Equals("English.json", StringComparison.OrdinalIgnoreCase)) // ManageConfiguracion ya da ingles
                 ?? _lenguagesAviable?.Find(a => a != null && a.Equals("Español.json", StringComparison.OrdinalIgnoreCase));
 
             if (_currentLanguage == null)
