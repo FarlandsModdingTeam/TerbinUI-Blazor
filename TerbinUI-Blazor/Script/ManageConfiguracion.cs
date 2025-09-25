@@ -42,6 +42,12 @@ namespace TerbinUI_Blazor.Script
                 { _language, "English.json"},
                 { _apiKey, "-1"}
             };
+            var json = System.Text.Json.JsonSerializer.Serialize(datos);
+
+            if (!Directory.Exists(_filePath))
+                Directory.CreateDirectory(_filePath);
+
+            File.WriteAllText(Path.Combine(_filePath, _fileName), json);
         }
 
         private static void handleArchivo()
