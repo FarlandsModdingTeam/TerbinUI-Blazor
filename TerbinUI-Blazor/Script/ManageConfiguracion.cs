@@ -15,6 +15,8 @@ namespace TerbinUI_Blazor.Script
         private const string _language = "idioma";
         private const string _apiKey = "apiKey";
 
+        private static bool _debug = false;
+
         // ***********************( GSI )*********************** //
         public static Dictionary<string, string>? Config
         {
@@ -89,6 +91,12 @@ namespace TerbinUI_Blazor.Script
             {
                 return (Config != null && Config.TryGetValue(_apiKey, out string? value)) ? value : "-1";
             }
+        }
+
+        public static bool DebugOn
+        {
+            set { _debug = value; }
+            get { return _debug; }
         }
 
         // ***********************( Funciones )*********************** //

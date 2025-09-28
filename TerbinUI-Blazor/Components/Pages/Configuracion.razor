@@ -46,6 +46,8 @@
 </select>
 <hr />
 
+<button @onclick="invertirDebug">*Debug</button>
+
 @code
 {
     private int contador = 0;
@@ -94,5 +96,10 @@
         //ManagaIdioma.CurrentLanguage = selecionarIdioma;
         //Console.WriteLine($"Idioma Actual: {selecionarIdioma}");
         //StateHasChanged();
+    }
+
+    private void invertirDebug()
+    {
+        ManageConfiguracion.DebugOn = !ManageConfiguracion.DebugOn;
     }
 }
