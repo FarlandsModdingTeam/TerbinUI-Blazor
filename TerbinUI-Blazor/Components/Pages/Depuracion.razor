@@ -15,11 +15,44 @@
 
 <div class="m-1">
     <h3>*Servicios</h3>
-    <p id="salidaServicio">*salidaServicio</p>
+    <p id="salidaServicio">*Condator: @contadorLocal</p>
+    <button @onclick="() => sumarPorServicio(1)" class="btn btn-primary">*sumarPorServicio</button>
+    <button @onclick="iniciar" class="btn btn-primary">*iniciar</button>
 </div>
 <hr />
 
 @code
 {
+    private byte contadorLocal = 0;
 
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+    private void iniciar()
+    {
+        var worker = new TerbinUI_Blazor.Script.Backend.SumWorker();
+        _ = worker.IniciarAsync();
+    }
+
+    private async Task sumarPorServicio(byte eSumando)
+    {
+        using var client = new NamedPipeClientStream(".", "SumaPipe", PipeDirection.InOut);
+
+        await client.ConnectAsync();
+
+        // Enviar dos sumandos: el actual y el nuevo
+        await client.WriteAsync(new byte[] { contadorLocal, eSumando }, 0, 2);
+
+        // Leer el resultado
+        byte[] buffer = new byte[1];
+        await client.ReadAsync(buffer, 0, 1);
+
+        //await client.FlushAsync();
+        //await client.DisposeAsync();
+
+        contadorLocal = buffer[0];
+        StateHasChanged();
+    }
 }
