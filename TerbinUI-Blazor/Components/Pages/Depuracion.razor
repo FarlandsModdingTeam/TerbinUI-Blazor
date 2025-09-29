@@ -17,7 +17,7 @@
     <h3>*Servicios</h3>
     <p id="salidaServicio">*Condator: @contadorLocal</p>
     <button @onclick="() => sumarPorServicio(1)" class="btn btn-primary">*sumarPorServicio</button>
-    <button @onclick="iniciar" class="btn btn-primary">*iniciar</button>
+    @*<button @onclick="iniciar" class="btn btn-primary">*iniciar</button>*@
 </div>
 <hr />
 
@@ -32,8 +32,7 @@
 
     private void iniciar()
     {
-        var worker = new TerbinUI_Blazor.Script.Backend.SumWorker();
-        _ = worker.IniciarAsync();
+        
     }
 
     private async Task sumarPorServicio(byte eSumando)

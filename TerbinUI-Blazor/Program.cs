@@ -15,6 +15,7 @@ builder.Logging.AddConsole();
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+builder.Services.AddHostedService<TerbinUI_Blazor.Script.Backend.SumWorker>();
 
 Console.WriteLine("(Terbin-UI > Program.cs): Construyendo Programa...");
 
